@@ -355,7 +355,8 @@ impl Parser {
   }
 
   /// Checks a string for well-formedness with manually-specified encoding.
-  /// IMPORTANT: This function is currently implemented in a HACKY way, to ignore invalid errors for HTML5 elements (such as <math>)
+  /// IMPORTANT: This function is currently implemented in a HACKY way, to
+  /// ignore invalid errors for HTML5 elements (such as `<math>`)
   ///            this means you should NEVER USE IT WHILE THREADING, it is CERTAIN TO BREAK
   ///
   /// Help is welcome in implementing it correctly.
