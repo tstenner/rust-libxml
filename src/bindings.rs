@@ -10089,9 +10089,9 @@ extern "C" {
 /// Various defines for the various Link properties.
 ///
 /// NOTE: the link detection layer will try to resolve QName expansion
-/// of namespaces. If "foo" is the prefix for "http://foo.com/"
+/// of namespaces. If "foo" is the prefix for `http://foo.com/`
 /// then the link detection layer will expand role="foo:myrole"
-/// to "http://foo.com/:myrole".
+/// to `http://foo.com/:myrole`.
 /// NOTE: the link detection layer will expand URI-Refences found on
 /// href attributes by using the base mechanism if found.
 pub type xlinkHRef = *mut xmlChar;
@@ -18129,7 +18129,7 @@ extern "C" {
 ///
 /// Note: query is a deprecated field which is incorrectly unescaped.
 /// query_raw takes precedence over query if the former is set.
-/// See: http://mail.gnome.org/archives/xml/2007-April/thread.html#00127
+/// See: <http://mail.gnome.org/archives/xml/2007-April/thread.html#00127>
 pub type xmlURI = _xmlURI;
 pub type xmlURIPtr = *mut xmlURI;
 #[repr(C)]
